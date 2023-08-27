@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>teste</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
     <link rel="stylesheet" href="mobile_style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onresize="size_change()">
     <div id="div_header">
         <header>
             <div id="interaction_box">
@@ -31,16 +33,19 @@
         </article>
         <article id="products">
             <h2>Aqui seria o que vendemos/fazemos</h2>
-            <div>
-                <img src="" alt="uma imagem">
+            <div class="content_article_products">
+                <img src="imagens/selo-do-exemplo-28420393.png" alt="uma imagem">
+                <h3>Produto 1</h3>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure voluptates, quaerat sequi iusto quam blanditiis? Ex, dolorum possimus.</p>
             </div>
-            <div>
-                <img src="" alt="uma imagem">
+            <div class="content_article_products">
+                <img src="imagens/selo-do-exemplo-28420393.png" alt="uma imagem">
+                <h3>Produto 2</h3>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure voluptates, quaerat sequi iusto quam blanditiis? Ex, dolorum possimus.</p>
             </div>
-            <div>
-                <img src="" alt="uma imagem">
+            <div class="content_article_products">
+                <img src="imagens/selo-do-exemplo-28420393.png" alt="uma imagem">
+                <h3>Produto 3</h3>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure voluptates, quaerat sequi iusto quam blanditiis? Ex, dolorum possimus.</p>
             </div>
         </article>
@@ -50,15 +55,18 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi eveniet quod veritatis, id maxime, illum nulla molestias consectetur, autem pariatur minus totam quaerat voluptates libero! Molestias ducimus rem ab nesciunt!</p>
             </div>
             <div>
-                <img src="" alt="outra imagem">
+                <img src="imagens/selo-do-exemplo-28420393.png" alt="outra imagem">
+                <h3>Algum Assunto</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
             </div>
             <div>
-                <img src="" alt="outra imagem">
+                <img src="imagens/selo-do-exemplo-28420393.png" alt="outra imagem">
+                <h3>Algum Assunto</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
             </div>
             <div>
-                <img src="" alt="outra imagem">
+                <img src="imagens/selo-do-exemplo-28420393.png" alt="outra imagem">
+                <h3>Algum Assunto</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
             </div>
         </article>
@@ -67,21 +75,39 @@
         <div>
             <h3>Mais informações.</h3>
         </div>
-        <button>
+        <button id="button_1">
             <div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas nihil odio quaerat modi.</p>
+                <p>Informação 1</p><i class="material-icons" id="icon_1">expand_more</i>
+            </div>
+            <div id="informação_1">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga vero dicta doloremque hic illum fugit. Mollitia explicabo facilis adipisci iusto tempora corrupti magnam sunt, magni ad. Accusantium vitae aperiam consectetur?</p>
             </div>
         </button>
-        <button>
+        <div class="line_bottom_button"></div>
+        <button id="button_2">
             <div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas nihil odio quaerat modi.</p>
+                <p>Informação 2</p><i class="material-icons" id="icon_2">expand_more</i>
+            </div>
+            <div id="informação_2">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita earum recusandae repellendus asperiores ad libero delectus corporis veritatis consequuntur quas officiis voluptas aliquam iusto, labore eos dignissimos odio repellat. Sapiente.
+                    </p>
             </div>
         </button>
-        <button>
+        <div class="line_bottom_button"></div>
+        <button id="button_3">
             <div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas nihil odio quaerat modi.</p>
+                <p>Informação 3</p><i class="material-icons" id="icon_3">expand_more</i>
+            </div>
+            <div id="informação_3">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita earum recusandae repellendus asperiores ad libero delectus corporis veritatis consequuntur quas officiis voluptas aliquam iusto, labore eos dignissimos odio repellat. Sapiente.
+                    </p>
             </div>
         </button>
+        <div class="line_bottom_button"></div>
     </footer>
 </body>
 </html>
+
+<script src="script.js"></script>
